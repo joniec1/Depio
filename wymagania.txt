@@ -1,0 +1,49 @@
+PROJEKT: Klon gry Diep.io w Pythonie (wersja podstawowa)
+
+WYMAGANIA TECHNICZNE:
+- Python 3.x
+- Biblioteka pygame
+
+INSTALACJA:
+pip install pygame
+
+STRUKTURA PROJEKTU:
+- main.py             -> pętla główna gry
+- player.py           -> klasa gracza (czołg)
+- bullet.py           -> klasa pocisku
+- config.py           -> stałe konfiguracyjne (kolory, rozmiary)
+- enemy.py            -> klasa przeciwników AI (opcjonalnie)
+- utils.py            -> funkcje pomocnicze (opcjonalnie)
+
+FUNKCJONALNOŚĆ PODSTAWOWA:
+[x] Okno gry o rozdzielczości 800x600
+[x] Gracz reprezentowany przez kółko
+[x] Poruszanie gracza za pomocą klawiszy W, A, S, D
+[x] Strzelanie pociskami (np. kliknięcie myszy)
+[ ] Obiekty XP do niszczenia (kwadraty, pentagony)
+[ ] System punktów doświadczenia (XP) i levelowania
+[ ] Ekran HUD z paskiem życia i poziomem
+[ ] Przeciwnicy AI (poruszanie się, atakowanie gracza)
+[ ] Kolizje między pociskami a obiektami
+[ ] Menu ulepszeń (np. przycisk E)
+[ ] Ekran startowy i ekran przegranej
+[ ] Minimapka (opcjonalnie)
+
+STAŁE I KOLORY W config.py:
+niebieski = (0, 200, 255)
+zielony = (0, 255, 100)
+czerwony = (255, 50, 50)
+czarne_tlo = (30, 30, 30)
+
+STEROWANIE:
+- W / A / S / D – ruch gracza
+- Mysz – celowanie (w przyszłości)
+- Lewy przycisk myszy – strzał (w przyszłości)
+- ESC lub kliknięcie X – wyjście z gry
+
+FPS:
+- Gra działa w 60 klatkach na sekundę dzięki pygame.time.Clock()
+
+INNE UWAGI:
+- Kod musi być modularny – osobne pliki dla każdej klasy
+- Gra powinna działać płynnie i być rozwijalna

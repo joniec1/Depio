@@ -1,0 +1,7 @@
+*.pyc
+*.pyo
+*.pyd
+*.log
+.env
+.vscode/
+.idea/
