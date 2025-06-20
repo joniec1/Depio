@@ -23,6 +23,8 @@ aggressive_red  = (255, 0, 0)       # attacking enemies
 white           = (255, 255, 255)
 black           = (0, 0, 0)
 
+yeallow = (255, 225, 70)
+
 MAP_WIDTH = 2000
 MAP_HEIGHT = 2000
 
