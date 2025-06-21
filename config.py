@@ -24,6 +24,7 @@ white           = (255, 255, 255)
 black           = (0, 0, 0)
 
 yeallow = (255, 225, 70)
+darker_yellow = (200, 180, 50)
 
 MAP_WIDTH = 2000
 MAP_HEIGHT = 2000

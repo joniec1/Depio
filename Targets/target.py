@@ -9,3 +9,6 @@ class Target:
     def hit(self, damage: float) -> bool:
         self. hp -= damage
         return self.hp <= 0
+    
+    def draw(self):
+        pass

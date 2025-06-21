@@ -1,15 +1,16 @@
 import pygame
 import math
+import config
 
 class Player:
-    def __init__(self, x, y):
+    def __init__(self, x: float, y: float) -> None:
         self.pos = pygame.Vector2(x, y)
         self.radius = 20
-        self.color = (0, 200, 255)
-        self.outline = (0, 100, 160)
+        self.color = config.blue_player
+        self.outline = config.blue_outline
         self.angle = 0
 
-    def update(self, keys, mouse_pos):
+    def update(self, keys, mouse_pos) -> None:
         velocity = pygame.Vector2(0, 0)
         speed = 3
 
@@ -45,4 +46,4 @@ class Player:
         p3 = self.pos - perp * (barrel_width / 2)
         p4 = self.pos + perp * (barrel_width / 2)
 
-        pygame.draw.polygon(screen, (100, 100, 100), [p1, p2, p3, p4])
+        pygame.draw.polygon(screen, config.medium_gray, [p1, p2, p3, p4])
